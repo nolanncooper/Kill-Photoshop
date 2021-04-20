@@ -18,11 +18,11 @@ public class PictureTester
   }
   
   /** Method to test mirrorVertical */
-  public static void testMirrorVertical()
+  public static void testMirrorVerticalRightToLeft()
   {
     Picture caterpillar = new Picture("caterpillar.jpg");
     caterpillar.explore();
-    caterpillar.mirrorVertical();
+    caterpillar.mirrorVerticalRightToLeft();
     caterpillar.explore();
   }
   
@@ -80,6 +80,37 @@ public class PictureTester
 	  water.explore();
   }
   
+  public static void testMirrorHorizontal() {
+	  Picture beach = new Picture("beach.jpg");
+	  beach.explore();
+	  beach.mirrorHorizontal();
+	  beach.explore();
+  }
+  public static void testMirrorHorizontalBotToTop() {
+	  Picture beach = new Picture("beach.jpg");
+	  beach.explore();
+	  beach.mirrorHorizontalBotToTop();
+	  beach.explore();
+  }
+  public static void testMirrorDiagonal() {
+	  Picture beach = new Picture("beach.jpg");
+	  beach.explore();
+	  beach.mirrorDiagonal();
+	  beach.explore();
+  }
+  public static void testMirrorArms() {
+	  Picture snowman = new Picture("snowman.jpg");
+	  snowman.explore();
+	  snowman.mirrorArms();
+	  snowman.explore();
+  }
+  
+  public static void testMirrorGull() {
+	  Picture gull = new Picture("seagull.jpg");
+	  gull.explore();
+	  gull.mirrorGull();
+	  gull.explore();
+  }
 
   
   
@@ -97,9 +128,13 @@ public class PictureTester
 //    testNegate();
 //    testGrayscale();
 //    testFixUnderwater();
-    testMirrorVertical();
-    //testMirrorTemple();
-    //testMirrorArms();
+//    testMirrorVerticalRightToLeft();
+//	  testMirrorHorizontal();
+//	  testMirrorHorizontalBotToTop();
+//	  testMirrorDiagonal();
+//    testMirrorTemple();
+//    testMirrorArms();
+	  testMirrorGull();
     
     
     
